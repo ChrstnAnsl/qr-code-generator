@@ -13,7 +13,7 @@ QRcode = qrcode.QRCode(
 	error_correction=qrcode.constants.ERROR_CORRECT_H
 )
 
-url = 'https://www.url.com/'
+url = 'https://github.com/ChrstnAnsl/'
 
 QRcode.add_data(url)
 QRcode.make()
@@ -27,6 +27,6 @@ pos = ((QRimg.size[0] - logo.size[0]) // 2,
 	(QRimg.size[1] - logo.size[1]) // 2)
 QRimg.paste(logo, pos)
 
-QRimg.save('QRCode.png')
+QRimg.save('Christian-Ansel-QR.png')
 
 print('QR code generated!')
